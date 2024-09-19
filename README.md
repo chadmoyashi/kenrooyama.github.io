@@ -1,4 +1,4 @@
-# Personal Portfolio ⚡️ 
+# Personal Portfolio: Kenro Oyama ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
 > this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io

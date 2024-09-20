@@ -26,20 +26,20 @@
 <img src="assets/screenshots/Activity1.png">
 
 ## Activity 2:
-<img src="assets/screenshots/Activity2sc">
-<img src="assets/screenshots/Activity2repo">
+<img src="assets/screenshots/Activity2sc.png">
+<img src="assets/screenshots/Activity2repo.png">
 
 ## Activity 3:
-<img src="assets/screenshots/Activity3sc">
-<img src="assets/screenshots/Activity3repo">
+<img src="assets/screenshots/Activity3sc.png">
+<img src="assets/screenshots/Activity3repo.png">
 
 ## Activity 4:
-<img src="assets/screenshots/Activity4sc">
-<img src="assets/screenshots/Activity4repo">
+<img src="assets/screenshots/Activity4sc.png">
+<img src="assets/screenshots/Activity4repo.png">
 
 ## Activity 5:
-<img src="assets/screenshots/Activity5sc">
-<img src="assets/screenshots/Activity5repo">
+<img src="assets/screenshots/Activity5sc.png">
+<img src="assets/screenshots/Activity5repo.png">
 
 
 ## Features 📋

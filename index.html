@@ -453,6 +453,65 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
           </div>
         </div>
 
+
+      <!-- Additional Section: Recent Projects -->
+        <section id="recentprojects" class="container">
+          <h2>Recent Projects</h2>
+          <div id="recent-projects"></div>
+          <button id="load-more" style="display:none;" class="btn btn-primary">Load More</button>
+        </section>
+
+        <script>
+          const projects = [
+            { title: "Project 1", description: "First project", link: "#" },
+            { title: "Project 2", description: "Second project", link: "#" },
+            { title: "Project 3", description: "Latest project", link: "#" },
+            { title: "Project 1", description: "First project", link: "#" },
+            { title: "Project 2", description: "Second project", link: "#" },
+            { title: "Project 3", description: "Latest project", link: "#" }
+          ];
+      
+          let currentIndex = 1;
+      
+          function displayLatestProject() {
+            const recentProjectsDiv = document.getElementById('recent-projects');
+            recentProjectsDiv.innerHTML = `
+              <div class="project">
+                <h3>${projects[projects.length - 1].title}</h3>
+                <p>${projects[projects.length - 1].description}</p>
+                <a href="${projects[projects.length - 1].link}">View Project</a>
+              </div>
+            `;
+          }
+      
+          function loadProjects(numberToLoad) {
+            const recentProjectsDiv = document.getElementById('recent-projects');
+            for (let i = currentIndex; i < currentIndex + numberToLoad && i < projects.length; i++) {
+              const projectHTML = `
+                <div class="project">
+                  <h3>${projects[i].title}</h3>
+                  <p>${projects[i].description}</p>
+                  <a href="${projects[i].link}">View Project</a>
+                </div>
+              `;
+              recentProjectsDiv.innerHTML += projectHTML;
+            }
+            currentIndex += numberToLoad;
+            if (currentIndex >= projects.length) {
+              document.getElementById('load-more').style.display = 'none';
+            }
+          }
+      
+          document.getElementById('load-more').addEventListener('click', function() {
+            loadProjects(1);
+          });
+      
+          displayLatestProject();
+          if (projects.length > 1) {
+            document.getElementById('load-more').style.display = 'block';
+          }
+        </script>
+
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
@@ -795,6 +854,8 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
           </div>
 
         </div>
+
+        
       </div>
     </section>
 

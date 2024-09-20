@@ -462,61 +462,59 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
         </section>
 
         <script>
-          const projects = [
-            { title: "Project 69", description: "First project", link: "#" },
-            { title: "Project 2", description: "Second project", link: "#" },
-            { title: "Project 3", description: "Latest project", link: "#" },
-            { title: "Project 1", description: "First project", link: "#" },
-            { title: "Project 2", description: "Second project", link: "#" },
-            { title: "Project 3", description: "Latest project", link: "#" }
-          ];
-      
-          let currentIndex = 1;
-      
-          function displayLatestProject() {
-            const recentProjectsDiv = document.getElementById('recent-projects');
-            recentProjectsDiv.innerHTML = `
-              <div class="project">
-                <h3>${projects[projects.length - 1].title}</h3>
-                <p>${projects[projects.length - 1].description}</p>
-                <a href="${projects[projects.length - 1].link}">View Project</a>
-              </div>
-            `;
-          }
-      
-          function loadProjects(numberToLoad) {
-            const recentProjectsDiv = document.getElementById('recent-projects');
-            for (let i = 0; i < currentIndex + numberToLoad && i < projects.length; i++) {
-              const projectHTML = `
-              <div class="project">
-                <h3>${projects[projects.length - 1].title}</h3>
-                <p>${projects[projects.length - 1].description}</p>
-                <a href="${projects[projects.length - 1].link}">View Project</a>
-              </div>
-                
 
+          const project = [
+            { title: "KatsuAI", description: "A AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter"},
+            { title: "PotatoAI", description: "Generates the best potatoes", tools: "MERN Stack", innerdesc: "Let's make potatoes!"},
+            { title: "HelloAI", description: "Generates hello world endlessly", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!"}
+          ]
+
+          function displayProject() {
+            const recentProjectsDiv = document.getElementById('recent-projects');
+            for (let i = 0; i < 3; i++) {
+              const blockHTML = `
+                <div class="col s12 m6 l4">
+                  <div class="card medium">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img alt="music streaming app" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator teal-text hoverline">${project.title}<i
+                          class="mdi-navigation-more-vert right"></i></span>
+                      <p>
+                        ${project.description}
+                      </p>
+                    </div>
+                    <div class="card-reveal">
+                      <!-- TODO: change this -- only close button -->
+                      <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                      <span class="card-title grey-text"><small>Accomplishments</small><i
+                          class="mdi-navigation-close right"></i></span>
+                      <ul>
+                        <li><b>Tools:</b> ${project.tools}</li>
+                        <li>${project.innerdesc}</li>
+
+                      </ul>
+                      <div class="card-action">
+                        <a aria-label="Visit " href="https://katsuai-8b939.web.app/" target="_blank" data-position="top"
+                          data-tooltip="View Online"
+                          class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                            class="fa fa-external-link"></i></a>
+                        <a aria-label="Visit the GitHub repo for  project" href="https://github.com/chadmoyashi/KatsuAI"
+                          target="_blank" data-position="top" data-tooltip="View Source"
+                          class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                            class="fa fa-github"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               `;
-              recentProjectsDiv.innerHTML += projectHTML;
             }
-            currentIndex += numberToLoad;
-            if (currentIndex >= projects.length) {
-              document.getElementById('load-more').style.display = 'none';
-            }
+
+            displayProject();
           }
-      
-          document.getElementById('load-more').addEventListener('click', function() {
-            loadProjects(1);
-          });
-          // always display the latest project
-          // displayLatestProject();
-
-          document.getElementById('load-more').style.display = 'block';
-
-          // if there's more, then display more.
-          // if (projects.length > 1) {
-            
-          // }
         </script>
+
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">

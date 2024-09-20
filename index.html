@@ -481,10 +481,10 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
                       <img alt="music streaming app" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
                     </div>
                     <div class="card-content">
-                      <span class="card-title activator teal-text hoverline">${project.title}<i
+                      <span class="card-title activator teal-text hoverline">${project[i].title}<i
                           class="mdi-navigation-more-vert right"></i></span>
                       <p>
-                        ${project.description}
+                        ${project[i].description}
                       </p>
                     </div>
                     <div class="card-reveal">
@@ -493,8 +493,8 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
                       <span class="card-title grey-text"><small>Accomplishments</small><i
                           class="mdi-navigation-close right"></i></span>
                       <ul>
-                        <li><b>Tools:</b> ${project.tools}</li>
-                        <li>${project.innerdesc}</li>
+                        <li><b>Tools:</b> ${project[i].tools}</li>
+                        <li>${project[i].innerdesc}</li>
 
                       </ul>
                       <div class="card-action">

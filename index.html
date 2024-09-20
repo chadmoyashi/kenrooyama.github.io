@@ -459,7 +459,6 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
           <h2>Recent Projects</h2>
           <div id="recent-projects"></div>
           <button id="load-more" class="btn btn-primary">Load More</button>
-          <button>Hi!!</button>
         </section>
 
         <script>
@@ -473,7 +472,7 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
           function displayProject() {
             const recentProjectsDiv = document.getElementById('recent-projects');
-            for (let i = 0; i < numDisplay; i++) {
+            for (let i = numDisplay - 1; i < numDisplay; i++) {
               const blockHTML = `
                 <div class="col s12 m6 l4">
                   <div class="card medium">
@@ -517,6 +516,7 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
           document.getElementById('load-more').addEventListener('click', function() {
             numDisplay++;
+            displayProject();
           });
 
           displayProject();

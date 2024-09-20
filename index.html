@@ -456,16 +456,17 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
       <!-- Additional Section: Recent Projects -->
         <section id="recentprojects" class="container">
-          <button id="load-more" style="display:none;" class="btn btn-primary">Load More</button>
           <h2>Recent Projects</h2>
           <div id="recent-projects"></div>
-          
+          <div>
+            <button id="load-more" style="display:none;" class="btn btn-primary">Load More</button>
+          </div>
         </section>
 
         <script>
 
           const project = [
-            { title: "KatsuAI", description: "A AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter"},
+            { title: "KatsuAI", description: "An AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter"},
             { title: "PotatoAI", description: "Generates the best potatoes", tools: "MERN Stack", innerdesc: "Let's make potatoes!"},
             { title: "HelloAI", description: "Generates hello world endlessly", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!"}
           ]
@@ -518,6 +519,7 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
           document.getElementById('load-more').addEventListener('click', function() {
             numDisplay++;
+            displayProject();
           });
 
           displayProject();

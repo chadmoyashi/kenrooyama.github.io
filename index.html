@@ -463,10 +463,10 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
         <script>
 
-          const date1 = new Date("2024-09-20");
-          const date2 = new Date("2024-09-21");
-          const date3 = new Date("2024-09-23");
-          const date4 = new Date("2024-09-25");
+          const date1 = new Date("2024-09-25");
+          const date2 = new Date("2024-09-23");
+          const date3 = new Date("2024-09-21");
+          const date4 = new Date("2024-09-20");
 
           const project = [
             { title: "KatsuAI", description: "An AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter", date: date1},
@@ -481,12 +481,12 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
             const recentProjectsDiv = document.getElementById('recent-projects');
 
             // sort by date
-            for (let i = 0; i < 4; i++){
-              for (let j = 0; j < (4 - i - 1); j++) {
-                if (project[j].date > project[j + 1]) {
+            for (let i = 3; i >= 0; i--){
+              for (let j = 3; j > (3 - j); j--) {
+                if (project[j].date > project[j - 1]) {
                   var temp = project[j]
-                  project[j] = project[j+1]
-                  project[j+1] = temp
+                  project[j] = project[j-1]
+                  project[j-1] = temp
                 }
               }
             }

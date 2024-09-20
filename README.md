@@ -23,23 +23,23 @@
 ## Screenshots for Lab1
 
 ## Activity 1:
-<img src="assets/img/screenshots/Activity1.png">
+<img src="assets/screenshots/Activity1.png">
 
 ## Activity 2:
-<img src="assets/img/screenshots/Activity2sc">
-<img src="assets/img/screenshots/Activity2repo">
+<img src="assets/screenshots/Activity2sc">
+<img src="assets/screenshots/Activity2repo">
 
 ## Activity 3:
-<img src="assets/img/screenshots/Activity3sc">
-<img src="assets/img/screenshots/Activity3repo">
+<img src="assets/screenshots/Activity3sc">
+<img src="assets/screenshots/Activity3repo">
 
 ## Activity 4:
-<img src="assets/img/screenshots/Activity4sc">
-<img src="assets/img/screenshots/Activity4repo">
+<img src="assets/screenshots/Activity4sc">
+<img src="assets/screenshots/Activity4repo">
 
 ## Activity 5:
-<img src="assets/img/screenshots/Activity5sc">
-<img src="assets/img/screenshots/Activity5repo">
+<img src="assets/screenshots/Activity5sc">
+<img src="assets/screenshots/Activity5repo">
 
 
 ## Features 📋

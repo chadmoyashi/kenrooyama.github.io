@@ -23,7 +23,7 @@
 ## Screenshots for Lab1
 
 ## Activity 1:
-<img src="assets/img/screenshots/Activity1">
+<img src="assets/img/screenshots/Activity1.png">
 
 ## Activity 2:
 <img src="assets/img/screenshots/Activity2sc">

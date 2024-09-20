@@ -469,9 +469,11 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
             { title: "HelloAI", description: "Generates hello world endlessly", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!"}
           ]
 
+          let numDisplay = 1;
+
           function displayProject() {
             const recentProjectsDiv = document.getElementById('recent-projects');
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < numDisplay; i++) {
               const blockHTML = `
                 <div class="col s12 m6 l4">
                   <div class="card medium">
@@ -512,6 +514,11 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
               recentProjectsDiv.innerHTML += blockHTML;
             }
           }
+
+          document.getElementById('load-more').addEventListener('click', function() {
+            numDisplay++;
+          });
+
           displayProject();
         </script>
 

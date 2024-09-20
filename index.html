@@ -462,11 +462,17 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
         </section>
 
         <script>
+
+          const date1 = new Date("2024-09-20");
+          const date2 = new Date("2024-09-21");
+          const date3 = new Date("2024-09-23");
+          const date4 = new Date("2024-09-25");
+
           const project = [
-            { title: "KatsuAI", description: "An AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter"},
-            { title: "PotatoAI", description: "Generates the best potatoes", tools: "MERN Stack", innerdesc: "Let's make potatoes!"},
-            { title: "HelloAI", description: "Generates hello world endlessly", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!"},
-            { title: "New Project 2", description: "Add a really good desc here", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!"}
+            { title: "KatsuAI", description: "An AI coverletter generator", tools: "Frontend bootstrap, ChatGPT API", innerdesc: "Enter prompts and generate your favoured cover letter", date: date1},
+            { title: "PotatoAI", description: "Generates the best potatoes", tools: "MERN Stack", innerdesc: "Let's make potatoes!", date: date2},
+            { title: "HelloAI", description: "Generates hello world endlessly", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!", date: date3},
+            { title: "New Project 2", description: "Add a really good desc here", tools: "HelloAI, ChatGPT API", innerdesc: "Helloooo!", date: date4}
           ]
 
           let numDisplay = 1;
@@ -485,6 +491,9 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
                           class="mdi-navigation-more-vert right"></i></span>
                       <p>
                         ${project[i].description}
+                      </p>
+                      <p>
+                        ${project[i].date}
                       </p>
                     </div>
                     <div class="card-reveal">

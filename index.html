@@ -486,13 +486,15 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
       
           function loadProjects(numberToLoad) {
             const recentProjectsDiv = document.getElementById('recent-projects');
-            for (let i = currentIndex; i < currentIndex + numberToLoad && i < projects.length; i++) {
+            for (let i = 0; i < currentIndex + numberToLoad && i < projects.length; i++) {
               const projectHTML = `
-                <div class="project">
-                  <h3>${projects[i].title}</h3>
-                  <p>${projects[i].description}</p>
-                  <a href="${projects[i].link}">View Project</a>
-                </div>
+              <div class="project">
+                <h3>${projects[projects.length - 1].title}</h3>
+                <p>${projects[projects.length - 1].description}</p>
+                <a href="${projects[projects.length - 1].link}">View Project</a>
+              </div>
+                
+
               `;
               recentProjectsDiv.innerHTML += projectHTML;
             }
@@ -505,11 +507,15 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
           document.getElementById('load-more').addEventListener('click', function() {
             loadProjects(1);
           });
-      
-          displayLatestProject();
-          if (projects.length > 1) {
-            document.getElementById('load-more').style.display = 'block';
-          }
+          // always display the latest project
+          // displayLatestProject();
+
+          document.getElementById('load-more').style.display = 'block';
+
+          // if there's more, then display more.
+          // if (projects.length > 1) {
+            
+          // }
         </script>
 
     <!-- Fourth Section: Projects -->

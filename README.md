@@ -20,6 +20,28 @@
 
 :star: Star me on GitHub — it helps!
 
+## Screenshots for Lab1
+
+## Activity 1:
+<img src="assets/img/screenshots/Activity1">
+
+## Activity 2:
+<img src="assets/img/screenshots/Activity2sc">
+<img src="assets/img/screenshots/Activity2repo">
+
+## Activity 3:
+<img src="assets/img/screenshots/Activity3sc">
+<img src="assets/img/screenshots/Activity3repo">
+
+## Activity 4:
+<img src="assets/img/screenshots/Activity4sc">
+<img src="assets/img/screenshots/Activity4repo">
+
+## Activity 5:
+<img src="assets/img/screenshots/Activity5sc">
+<img src="assets/img/screenshots/Activity5repo">
+
+
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\

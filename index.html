@@ -479,6 +479,18 @@ techniques, whilst strictly adhering to PS5 UI guidelines.
 
           function displayProject() {
             const recentProjectsDiv = document.getElementById('recent-projects');
+
+            // sort by date
+            for (let i = 0; i < 4; i++){
+              for (let j = 0; j < (4 - i - 1); j++) {
+                if (project[j].date > project[j + 1]) {
+                  var temp = project[j]
+                  project[j] = project[j+1]
+                  project[j+1] = temp
+                }
+              }
+            }
+
             for (let i = numDisplay - 1; i < numDisplay; i++) {
               const blockHTML = `
                 <div class="col s12 m6 l4">
